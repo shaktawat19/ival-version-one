@@ -24,4 +24,3 @@ const MenuNavbar = ({ children }) => {
 };
 
 export default MenuNavbar;
-

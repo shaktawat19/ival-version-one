@@ -1,5 +1,4 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
 import "@progress/kendo-theme-default/dist/all.css";
 import {
   PanelBar,
@@ -60,7 +59,7 @@ const Accordion = () => {
   return (
     <div className="panelbar-wrapper">
       <h1>Frequently Asked Questions</h1>
-      <PanelBar>
+      {/* <PanelBar>
         <PanelBarItem
           icon={PlusIcon}
           iconClass="panel-bar-icon"
@@ -85,7 +84,7 @@ const Accordion = () => {
           <PanelBarItem title={loremText} className="" />
         </PanelBarItem>
       </PanelBar>
-      <hr />
+      <hr /> */}
       <PanelBar children={components} style={customPanelBarStyle} />
     </div>
   );
