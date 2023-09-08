@@ -1,14 +1,15 @@
 import React from "react";
-import StepperComponent from "../../Components/stepper/StepperComponent";
+import {Stage5} from "./Stage5";
 import Stage1 from "./Stage1";
+import Stage4 from "./Stage4";
 import Stage2 from "./Stage2";
 import Stage3 from "./Stage3";
-import Stage4 from "./Stage4";
-import Stage5 from "./Stage5";
+import StepperComponent from "../../components/stepper/StepperComponent";
+
 
 
 const customSteps = [
-  { id: 0,
+  { 
     label: "Stage 1",
     component: <Stage1 />,
   },
@@ -32,8 +33,8 @@ const customSteps = [
 
 const Stepper = () => {
   return (
-    <div>
-      <StepperComponent steps={customSteps} />
+    <div className="" style={{padding:"10rem"}}>
+      <StepperComponent steps={customSteps} style={{width:"100%"}}/>
     </div>
   );
 };

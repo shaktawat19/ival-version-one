@@ -6,4 +6,4 @@ const Stage5 = () => {
   )
 }
 
-export default Stage5
+export  {Stage5};

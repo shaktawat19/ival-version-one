@@ -3,6 +3,9 @@ import Home from "./pages/home/Home.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./gobal.css";
 import About from "./pages/about/About";
+import Stepper from "./Pages/Stages/Stepper";
+
+
 
 const App = () => {
   return (
@@ -11,7 +14,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-        </Routes>
+        <Route path="/stepper" element={<Stepper/>}/>
+      </Routes>
       </BrowserRouter>
     </div>
   );
