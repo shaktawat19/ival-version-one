@@ -1,0 +1,42 @@
+.heading {
+    padding-top: 3rem;
+    font-family: Figtree;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1b3f58;
+    width:100%
+  }
+
+  .field-container {
+    position: relative;
+    width: 50rem;
+    display : flex;
+    justify-content: space-between;
+    
+  }
+  
+  .overlay {
+    position: absolute;
+    right: 0;
+    top: 2.6rem;
+    width: 40%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.3); /* Grey background with some opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+  }
+
+  
+  
+  .input-wrapper {
+    flex: 1;
+    margin-right: 10px; /* Adjust the spacing between the inputs */
+    position:relative;
+  }
+  
+  
