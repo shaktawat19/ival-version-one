@@ -1,49 +1,103 @@
-import "./Footer.css";
+import React from "react";
+import styled from "styled-components";
+// import logo from '../../icons/logo.svg';
+const FooterComponent = styled.div`
+  .main {
+    padding: 60px 80px 40px;
+    background: #1B3F58;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    .footer-top {
+      display: flex;
+      width: 85vw;
+      justify-content: space-between;
+      align-items: flex-start;
+      .left-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+        .contact-details {
+          display: flex;
+          align-items: flex-start;
+          gap: 32px;
+        }
+      }
+      .right-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        .buttons-container {
+          display: flex;
+          align-items: flex-start;
+          gap: 12px;
+          align-self: stretch;
+        }
+      }
+    }
+    .footer-liner {
+      width: 85vw;
+      height: 1px;
+      background-color: #fff;
+    }
+    .footer-bottom {
+      display: flex;
+      width: 85vw;
+      justify-content: space-between;
+      align-items: center;
+      .service {
+        display: flex;
+        align-items: flex-start;
+        gap: 32px;
+      }
+    }
+  }
+`;
 const Footer = () => {
   return (
-    <div className="version-8-light">
-      <div className="bottom-line" />
-      <div className="container">
-        <div className="ival-inc-all">
-          © 2023 Ival Inc. All rights reserved.
-        </div>
-        <div className="links">
-          <div className="ival-inc-all">Terms of Service</div>
-          <div className="ival-inc-all">Privacy Policy</div>
-          <div className="ival-inc-all">Cookies</div>
-        </div>
-      </div>
-      <div className="footer-line" />
-      <div className="container1">
-        <div className="logo-and-contacts">
-          <img className="layer-1-icon1" alt="" src="/layer-1.svg" />
-          <div className="links">
-            <div className="email-group">
-              <div className="ival-inc-all">Email</div>
-              <div className="helloivalcom">hello@Ival.com</div>
+    <FooterComponent>
+      <div className="main">
+        <div className="footer-top">
+          <div className="left-info">
+            <div className="logo">
+              {/* <img src={logo} alt="" /> */}
             </div>
-            <div className="email-group">
-              <div className="ival-inc-all">Phone Number</div>
-              <div className="helloivalcom">+1 (201) 895-3801</div>
+            <div className="contact-details">
+              <div className="mail-info">
+                <p>Email</p>
+                <p>Something@gmail.com</p>
+              </div>
+              <div className="number-info">
+                <p>Phone number</p>
+                <p>+1 (201) 895-3801</p>
+              </div>
+            </div>
+          </div>
+          <div className="">
+            <h1>Get Personal Details</h1>
+            <div className="" style={{display:'flex',}}>
+              <button style={{width:'50%', marginRight:'.50rem', padding:'0.50rem 1.25rem', backgroundColor:'#F09021', border:'none', color:'white' }}>Get Started</button>
+              <button style={{ width:'50%', color:'white', backgroundColor:'#1B3F58', border:'1px solid white',}}>Login</button>
             </div>
           </div>
         </div>
-        <div className="title-and-buttons">
-          <div className="get-started-with">
-            Get started with personal manager now
+        <div className="footer-liner"></div>
+        <div className="footer-bottom">
+          <div className="copyrights">
+            © 2023 Ival Inc. All rights reserved.
           </div>
-          <div className="buttons">
-            <div className="get-started-wrapper">
-              <b className="get-started">Get Started</b>
-            </div>
-            <div className="login-wrapper">
-              <b className="get-started">LogIn</b>
-            </div>
+          <div className="service">
+            <span>Terms of Service</span>
+            <span>Privacy Policy</span>
+            <span>Cookies</span>
           </div>
         </div>
       </div>
-    </div>
+    </FooterComponent>
   );
 };
-
 export default Footer;

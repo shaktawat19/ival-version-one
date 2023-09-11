@@ -1,5 +1,10 @@
 /* StepperComponent.css */
 
+.k-input-inner{
+  padding-block: 16px !important;
+  padding-inline: 18px !important;
+}
+
 .stepper-container {
     display: flex;
     justify-content: space-between;
@@ -16,7 +21,7 @@
     clip-path:  polygon(70% 0%, 80% 50%, 70% 100%, 0% 100%, 10% 50%, 0% 0%);
     background-color: #eee; 
     height: 60px;
-    width:150px;
+    width:255px;
     margin-top: 20px
   }
   
@@ -36,7 +41,7 @@
   }
   
   .step-number {
-    width: 320px;
+    /* width: 320px; */
     height: 70px;
    
     font-size: 20px;

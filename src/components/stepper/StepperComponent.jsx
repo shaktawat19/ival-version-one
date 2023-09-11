@@ -20,7 +20,7 @@ const StepperComponent = ({ steps }) => {
     }
   };
   return (
-    <>
+    <div style={{paddingLeft:'8rem', paddingRight:'8rem'}}>
       <div className="stepper-container">
         {steps?.map((step, index) => (
           <div
@@ -44,16 +44,7 @@ const StepperComponent = ({ steps }) => {
       <div className="step-content">
         {steps[activeStep] ? steps[activeStep].component : "Step not found"}
       </div>
-      <Button
-        onClick={handleNextStep}
-        disabled={activeStep === steps?.length - 1}
-      >
-        Next
-      </Button>
-      <Button onClick={handlePreviousStep} disabled={activeStep === 0}>
-        Previous
-      </Button>
-    </>
+    </div>
   );
 };
 

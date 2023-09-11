@@ -40,6 +40,7 @@ const Stage1 = () => {
         <FormElement
           style={{
             width: "100%",
+            marginBottom:'8rem'
           }}
         >
           <fieldset className={"k-form-fieldset"}>
@@ -58,7 +59,7 @@ const Stage1 = () => {
                 label={"Land Ownership Status"}
                 component={FormInput}
                 // validator={nameValidator}
-                style={{ width: "30rem", lineHeight: 2 }}
+                style={{ width: "350px", lineHeight: 2 }}
               />
               <Field
                 id={"Land Election VAT"}
@@ -66,7 +67,7 @@ const Stage1 = () => {
                 label={"Land Election VAT"}
                 component={FormInput}
                 // validator={nameValidator}
-                style={{ width: "30rem", lineHeight: 2 }}
+                style={{ width: "350px", lineHeight: 2 }}
               />
               <Field
                 id={"email"}
@@ -75,14 +76,14 @@ const Stage1 = () => {
                 type={"email"}
                 component={FormInput}
                 // validator={emailValidator}
-                style={{ width: "30rem", lineHeight: 2 }}
+                style={{ width: "350px", lineHeight: 2 }}
               />
             </div>
             <div
               style={{
                 display: "flex",
                 flexDirection: "column",
-                marginTop: "2rem",
+                paddingTop: "1.5rem", paddingBottom: "1.5rem",
               }}
             >
               <label className="">Last name</label>
@@ -91,7 +92,7 @@ const Stage1 = () => {
                 data={lastNameOptions}
                 defaultValue={lastNameOptions[0]} // Set the default selected value
                 className="custom-dropdown"
-                style={{ width: "30rem", lineHeight: 2 }}
+                style={{ width: "350px", lineHeight: 2 }}
               />
             </div>
             <h1 className="heading">Land Ownership</h1>
@@ -107,7 +108,7 @@ const Stage1 = () => {
                 style={{
                   display: "flex",
                   flexDirection: "column",
-                  marginTop: "2rem",
+                  paddingTop: "1.5rem", paddingBottom: "1.5rem",
                 }}
               >
                 <label className="">Last name</label>
@@ -116,14 +117,14 @@ const Stage1 = () => {
                   data={lastNameOptions}
                   defaultValue={lastNameOptions[0]} // Set the default selected value
                   className="custom-dropdown"
-                  style={{ width: "30rem", lineHeight: 2 }}
+                  style={{ width: "350px", lineHeight: 2 }}
                 />
               </div>
               <div
                 style={{
                   display: "flex",
                   flexDirection: "column",
-                  marginTop: "2rem",
+                  paddingTop: "1.5rem", paddingBottom: "1.5rem",
                 }}
               >
                 <label className="">Last name</label>
@@ -132,15 +133,15 @@ const Stage1 = () => {
                   data={lastNameOptions}
                   defaultValue={lastNameOptions[0]} // Set the default selected value
                   className="custom-dropdown"
-                  style={{ width: "30rem", lineHeight: 2 }}
+                  style={{ width: "350px", lineHeight: 2 }}
                 />
               </div>
               <div
                 style={{
                   display: "flex",
                   flexDirection: "column",
-                  marginTop: "2rem",
-                  width: "30rem",
+                  paddingTop: "1.5rem", paddingBottom: "1.5rem",
+                  width: "350px",
                 }}
               >
                 <label className="">Date of Birth</label>
@@ -149,7 +150,7 @@ const Stage1 = () => {
                   {...datepickerOptions}
                   defaultValue={new Date()} // Set the default selected date
                   className="custom-datepicker" // Add a custom class to the DatePicker
-                  style={{ width: "30rem", lineHeight: 2 }}
+                  style={{ width: "350px", lineHeight: 2 }}
                 />
               </div>
             </div>
@@ -167,7 +168,7 @@ const Stage1 = () => {
                 style={{
                   display: "flex",
                   flexDirection: "column",
-                  marginTop: "1.5rem",
+                  paddingTop: "1.5rem", paddingBottom: "1.5rem",
                 }}
               >
                 <label className="">Last name</label>
@@ -176,7 +177,7 @@ const Stage1 = () => {
                   data={lastNameOptions}
                   defaultValue={lastNameOptions[0]} // Set the default selected value
                   className="custom-dropdown"
-                  style={{ width: "30rem", lineHeight: 2 }}
+                  style={{ width: "350px", lineHeight: 2 }}
                 />
               </div>
 
@@ -187,7 +188,7 @@ const Stage1 = () => {
                 mask={"(999) 000-00-00-00"}
                 component={FormMaskedTextBox}
                 validator={phoneValidator}
-                style={{ width: "30rem", lineHeight: 2 }}
+                style={{ width: "350px", lineHeight: 2 }}
               />
               <Field
                 id={"email"}
@@ -196,7 +197,7 @@ const Stage1 = () => {
                 type={"email"}
                 component={FormInput}
                 validator={emailValidator}
-                style={{ width: "30rem", lineHeight: 2 }}
+                style={{ width: "350px", lineHeight: 2 }}
               />
             </div>
 
@@ -204,8 +205,8 @@ const Stage1 = () => {
               style={{
                 display: "flex",
                 flexDirection: "column",
-                marginTop: "2rem",
-                width: "30rem",
+                paddingTop: "1.5rem", paddingBottom: "1.5rem",
+                width: "350px",
               }}
             >
               <label className="">Date of Birth</label>
@@ -214,7 +215,7 @@ const Stage1 = () => {
                 {...datepickerOptions}
                 defaultValue={new Date()} // Set the default selected date
                 className="custom-datepicker" // Add a custom class to the DatePicker
-                style={{ width: "30rem", lineHeight: 2 }}
+                style={{ width: "350px", lineHeight: 2 }}
               />
             </div>
 
@@ -232,8 +233,8 @@ const Stage1 = () => {
               style={{
                 display: "flex",
                 flexDirection: "column",
-                marginTop: "2rem",
-                width: "20rem",
+                paddingTop: "1.5rem", paddingBottom: "1.5rem",
+                width: "250px",
               }}
             >
               <label className="">Date of Birth</label>
@@ -242,15 +243,15 @@ const Stage1 = () => {
                 {...datepickerOptions}
                 defaultValue={new Date()} // Set the default selected date
                 className="custom-datepicker" // Add a custom class to the DatePicker
-                style={{ width: "20rem", lineHeight: 2 }}
+                style={{ width: "250px", lineHeight: 2 }}
               />
             </div>
             <div
               style={{
                 display: "flex",
                 flexDirection: "column",
-                marginTop: "2rem",
-                width: "20rem",
+                paddingTop: "1.5rem", paddingBottom: "1.5rem",
+                width: "250px",
               }}
             >
               <label className="">Date of Birth</label>
@@ -259,15 +260,15 @@ const Stage1 = () => {
                 {...datepickerOptions}
                 defaultValue={new Date()} // Set the default selected date
                 className="custom-datepicker" // Add a custom class to the DatePicker
-                style={{ width: "20rem", lineHeight: 2 }}
+                style={{ width: "250px", lineHeight: 2 }}
               />
             </div>
             <div
               style={{
                 display: "flex",
                 flexDirection: "column",
-                marginTop: "2rem",
-                width: "20rem",
+                paddingTop: "1.5rem", paddingBottom: "1.5rem",
+                width: "250px",
               }}
             >
               <label className="">Date of Birth</label>
@@ -276,15 +277,15 @@ const Stage1 = () => {
                 {...datepickerOptions}
                 defaultValue={new Date()} // Set the default selected date
                 className="custom-datepicker" // Add a custom class to the DatePicker
-                style={{ width: "20rem", lineHeight: 2 }}
+                style={{ width: "250px", lineHeight: 2 }}
               />
             </div>
             <div
               style={{
                 display: "flex",
                 flexDirection: "column",
-                marginTop: "2rem",
-                width: "20rem",
+                paddingTop: "1.5rem", paddingBottom: "1.5rem",
+                width: "250px",
               }}
             >
               <label className="">Date of Birth</label>
@@ -293,7 +294,7 @@ const Stage1 = () => {
                 {...datepickerOptions}
                 defaultValue={new Date()} // Set the default selected date
                 className="custom-datepicker" // Add a custom class to the DatePicker
-                style={{ width: "20rem", lineHeight: 2 }}
+                style={{ width: "250px", lineHeight: 2 }}
               />
             </div>
         
@@ -306,26 +307,8 @@ const Stage1 = () => {
                 type={"email"}
                 component={FormInput}
                 validator={emailValidator}
-                style={{ width: "20rem", lineHeight: 2 }}
+                style={{ width: "250px", lineHeight: 2 }}
               />
-            <span className={"k-form-separator"} />
-            <Field
-              id={"terms"}
-              name={"terms"}
-              label={"I agree with terms and conditions"}
-              component={FormCheckbox}
-              validator={termsValidator}
-            />
-            <div className="k-form-buttons">
-              <Button
-                themeColor={"primary"}
-                type={"submit"}
-                disabled={!formRenderProps.allowSubmit}
-              >
-                Send Reservation Request
-              </Button>
-              <Button onClick={formRenderProps.onFormReset}>Clear</Button>
-            </div>
           </fieldset>
         </FormElement>
       )}

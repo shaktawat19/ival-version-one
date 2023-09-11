@@ -1,0 +1,5 @@
+const AuthModel = {
+    token: '',
+    refreshToken: ''
+  };
+  

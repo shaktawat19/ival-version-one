@@ -1,9 +1,24 @@
-import React from 'react'
-
+import React from "react";
+import "./common.css";
+import KendoButton from "../../components/button/KendoButton";
+import DropZone from "../../components/dropzone/DropZone";
+import Footer from "../../components/Footer/Footer";
 const Stage3 = () => {
   return (
-    <div>Sit amet velit cillum eiusmod labore. Aute elit occaecat commodo duis laboris ullamco voluptate qui adipisicing sit voluptate consectetur dolor ipsum. Ipsum esse magna dolor adipisicing mollit est in amet. Anim cupidatat ut deserunt esse ad adipisicing id fugiat voluptate quis non enim mollit. Consectetur deserunt deserunt quis laborum.</div>
-  )
-}
+    <>
+      <div className="heading">Lorem ipsum dolor sit amet consectetur.</div>
+      <div className="sub-sub-heading" style={{ paddingTop: "1.5rem" }}>
+        Lorem ipsum dolor sit amet consectetur. Ac tellus ut quis vel et egestas
+        pharetra porta cursus. Arcu dui elit integer arcu{" "}
+      </div>
+      <div style={{ paddingTop: "1.5rem" }}>
+        <KendoButton style={{padding: "0.75rem 1.25rem", textDecoration:'none', border:'none'}}>Download Sample</KendoButton>
+      </div>
+      <div style={{ paddingTop: "2rem" }}>
+        <DropZone />
+      </div>
+    </>
+  );
+};
 
-export default Stage3
+export default Stage3;
