@@ -4,7 +4,7 @@ import ApiService from "../../services/_apiservices";
 //   loadingFailedAction,
 //   loadingSuccessAction
 // } from "../../store/actions/_commonActions";
-import { globalConstant } from "../_gConstant.js";
+import { globalConstant } from "../_gConstant/index.js";
 import { apiResponse } from "../_gTypes";
 import {
   toastError,

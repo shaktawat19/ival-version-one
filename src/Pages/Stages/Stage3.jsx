@@ -12,7 +12,7 @@ const Stage3 = () => {
         pharetra porta cursus. Arcu dui elit integer arcu{" "}
       </div>
       <div style={{ paddingTop: "1.5rem" }}>
-        <KendoButton style={{padding: "0.75rem 1.25rem", textDecoration:'none', border:'none'}}>Download Sample</KendoButton>
+        <KendoButton style={{padding: "0.75rem 1.25rem", textDecoration:'none', border:'none'}}>Download Sample </KendoButton>
       </div>
       <div style={{ paddingTop: "2rem" }}>
         <DropZone />

@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import * as Yup from "yup";
 import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
-import { login } from "../core/_request";
-// import { useAuth } from "../core/Auth";
+import { login, getUserByToken } from "../core/_request";
+import LocalStorageServices from "../../../services/_localStorageServices";
+import { useAuth } from "../core/Auth";
+import siteConfig from "../../../services/_siteConfig";
 
 const loginSchema = Yup.object().shape({
   email: Yup.string()
@@ -27,7 +29,7 @@ const Login = () => {
 
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-  // const { saveAuth } = useAuth();
+  const { saveAuth, setCurrentUser } = useAuth();
 
   const formik = useFormik({
     initialValues,
@@ -35,16 +37,21 @@ const Login = () => {
     onSubmit: async (values, { setStatus, setSubmitting }) => {
       setLoading(true);
       try {
-        console.log(values)
-        const response = await login(values.email, values.password);
-        console.log(response); // Log the response to inspect its structure
-        const auth = response.data; // Update this line based on the actual response structure
-        // saveAuth(auth);
-        setLoading(false);
+        const {
+            data: auth 
+        } = await login(values.email, values.password);
+        saveAuth(auth?.access);
+
+        const {
+           data: user 
+        } = await getUserByToken(auth?.token);
+        setCurrentUser(user);
       } catch (error) {
         console.error(error);
+
+        // Handle any other errors, e.g., network issues, server errors, etc.
         // saveAuth(undefined);
-        setStatus("The login details are incorrect");
+        setStatus("An error occurred during login");
         setSubmitting(false);
         setLoading(false);
       }

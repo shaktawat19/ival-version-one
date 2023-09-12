@@ -1,10 +1,11 @@
-const siteConfig = require("./_siteConfig");
+import siteConfig from './_siteConfig'
 
 class LocalStorageService {
 
   getAccessToken() {
     try {
       let access_token = localStorage.getItem(siteConfig.ACCESS_TOKEN);
+      console.log(access_token);
       return access_token;
     } catch (err) {
       console.log(err);
@@ -41,4 +42,4 @@ class LocalStorageService {
   }
 }
 
-module.exports = new LocalStorageService();
+export default new  LocalStorageService();

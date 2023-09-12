@@ -1,5 +1,7 @@
-import siteConfig from "../../../../services/_siteConfig";
-import { ENUM_API_STATUS, handleGetDataFromApi, handlePostDataFromApi } from "../../../../utils";
+// import siteConfig from "../../../services/_apiservices";
+import siteConfig from "../../../services/_siteConfig";
+import { ENUM_API_STATUS} from "../../../utils/_gConstant/index.js";
+import { handlePostDataFromApi } from "../../../utils/_gFunctions/_handleAPI";
 import { apiResponse } from "../../../utils/_gTypes/index";
 
 const forgetPasswordRequest = async (body, isLoading) => {

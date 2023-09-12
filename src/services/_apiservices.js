@@ -1,8 +1,8 @@
 'use strict';
-const axios = require('axios');
-const siteConfig = require('./_siteConfig');
-const { globalConstant } = require('../utils/_gConstant.js/index');
-const LocalStorageService = require('./_localStorageServices');
+import axios from 'axios'
+import siteConfig from './_siteConfig'
+import {globalConstant} from "../utils/_gConstant/index.js"
+import LocalStorageService from './_localStorageServices'
 
 const API_URL = process.env.REACT_APP_API_URL;
 const api = axios.create({
@@ -34,7 +34,7 @@ api.interceptors.response.use(
 
     if (error.response.status === 401) {
       alert('Your session has been expired!');
-      window.location.href = '/visdum/auth';
+      window.location.href = '/login';
       LocalStorageService.removeToken();
       return Promise.reject(error);
     }
@@ -139,4 +139,4 @@ class ApiService {
   }
 }
 
-module.exports = new ApiService();
+export default  new ApiService
