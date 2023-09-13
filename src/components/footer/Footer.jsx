@@ -1,110 +1,48 @@
-import React from "react";
-import styled from "styled-components";
-
-const FooterComponent = styled.div`
-  .main {
-    padding: 60px 80px 40px;
-    background: #1b3f58;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-
-    .footer-top {
-      display: flex;
-      width: 85vw;
-      justify-content: space-between;
-      align-items: flex-start;
-
-      .left-info {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 48px;
-
-        .contact-details {
-          display: flex;
-          align-items: flex-start;
-          gap: 32px;
-        }
-      }
-
-      .right-info {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 24px;
-
-        .buttons-container {
-          display: flex;
-          align-items: flex-start;
-          gap: 12px;
-          align-self: stretch;
-        }
-      }
-    }
-
-    .footer-liner {
-      width: 85vw;
-      height: 1px;
-      background-color: #fff;
-    }
-
-    .footer-bottom {
-      display: flex;
-      width: 85vw;
-      justify-content: space-between;
-      align-items: center;
-
-      .service {
-        display: flex;
-        align-items: flex-start;
-        gap: 32px;
-      }
-    }
-  }
-`;
-
+import "./Footer.css";
 const Footer = () => {
   return (
-    <FooterComponent>
-      <div className="main">
-        <div className="footer-top">
-          <div className="left-info">
-            <div className="logo">Logo here</div>
-            <div className="contact-details">
-              <div className="mail-info">
-                <p>Email</p>
-                <p>Something@gmail.com</p>
-              </div>
-              <div className="number-info">
-                <p>Phone number</p>
-                <p>+1 (201) 895-3801</p>
-              </div>
+    <div className="version-8-light">
+      <div className="bottom-line" />
+      <div className="container">
+        <div className="ival-inc-all">
+          © 2023 Ival Inc. All rights reserved.
+        </div>
+        <div className="links">
+          <div className="ival-inc-all">Terms of Service</div>
+          <div className="ival-inc-all">Privacy Policy</div>
+          <div className="ival-inc-all">Cookies</div>
+        </div>
+      </div>
+      <div className="footer-line" />
+      <div className="container1">
+        <div className="logo-and-contacts">
+          <img className="layer-1-icon1" alt="" src="/layer-1.svg" />
+          <div className="links">
+            <div className="email-group">
+              <div className="ival-inc-all">Email</div>
+              <div className="helloivalcom">hello@Ival.com</div>
             </div>
-          </div>
-          <div className="right-info">
-            <h1>Get Personal Details</h1>
-            <div className="buttons-container">
-              <button>Get Started</button>
-              <button>Login</button>
+            <div className="email-group">
+              <div className="ival-inc-all">Phone Number</div>
+              <div className="helloivalcom">+1 (201) 895-3801</div>
             </div>
           </div>
         </div>
-        <div className="footer-liner"></div>
-        <div className="footer-bottom">
-          <div className="copyrights">
-            © 2023 Ival Inc. All rights reserved.
+        <div className="title-and-buttons">
+          <div className="get-started-with">
+            Get started with personal manager now
           </div>
-          <div className="service">
-            <span>Terms of Service</span>
-            <span>Privacy Policy</span>
-            <span>Cookies</span>
+          <div className="buttons">
+            <div className="get-started-wrapper">
+              <b className="get-started">Get Started</b>
+            </div>
+            <div className="login-wrapper">
+              <b className="get-started">LogIn</b>
+            </div>
           </div>
         </div>
       </div>
-    </FooterComponent>
+    </div>
   );
 };
 

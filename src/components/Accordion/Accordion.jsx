@@ -15,21 +15,33 @@ const loremText =
 
 const items = [
   {
-    title: "1 item",
-    content: loremText,
+    title: "HOW MUCH DOES THIS SOFTWARE COST TO USE ?",
+    content: "iVal is completely free to use. When you agree a deal with a partner, we receive a fee and/or commission from them." ,
     // icon: plusIcon
     // className: 'accordion-toggle'
     // expanded: true,
   },
   {
-    title: "2 item",
-    content: loremText,
+    title: "HOW ACCURATE ARE THE VALUATIONS?",
+    content: "The desktop valuation provided is purely indicative. Our algorithm analyses all of the parameters used by our partners to derive a desktop value guide. It's the users responsibility to ensure that the information provided is accurate and complete. If it isn't, the valuation guide may not be valid or accurate and it may be subject to change",
     // className: 'accordion-toggle'
     // expanded: true,
   },
   {
-    title: "3 item",
-    content: loremText,
+    title: "CAN I INTEGRATE THIS INTO OUR INTERNAL SYSTEMS?",
+    content: "Yes. The software has been developed to allow any user to integrate and/or download the data into their internal systems via API. Please contact the technical team if you wish to discuss a more bespoke approach.",
+    // className:""
+    // expanded: true,
+  },
+  {
+    title: "WHO CAN USE THIS SOFTWARE?",
+    content: "This software is available to any Land owner, Land promoter, Developer, Contractor or House Builder. All users are subject to checks and authorisation by the company.",
+    // className:""
+    // expanded: true,
+  },
+  {
+    title: "WHO CAN USE THIS SOFTWARE?",
+    content: "Use of the Site is subject to all of the Terms set out in the pdf below - if you do not agree to the terms, please stop using the Site immediately. It's also your sole responsibility to ensure that our offering matches your requirements. If you use our Site, you will also be subject to the partner's terms and policies (which will be different from ours) and you should read those carefully. We may amend these terms and conditions at any time and without notice by changing this page, so you should check these Terms of Use each time you use the Site. Link to T&C’s - PDF ",
     // className:""
     // expanded: true,
   },

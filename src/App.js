@@ -3,8 +3,7 @@ import Home from "./pages/home/Home.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./gobal.css";
 import About from "./pages/about/About";
-import Stepper from "./Pages/Stages/Stepper";
-
+import Stepper from "./pages/stages/Stepper";
 
 
 const App = () => {
