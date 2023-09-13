@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-// import logo from '../../icons/logo.svg';
+import logo from "../../icons/logo.svg";
+import ButtonComponent from '../button/ButtonComponent';
 const FooterComponent = styled.div`
   .main {
+    width: 100%;
     padding: 60px 80px 40px;
     background: #1B3F58;
     color: #fff;
@@ -12,7 +14,7 @@ const FooterComponent = styled.div`
     gap: 40px;
     .footer-top {
       display: flex;
-      width: 85vw;
+      width: 100%;
       justify-content: space-between;
       align-items: flex-start;
       .left-info {
@@ -27,26 +29,38 @@ const FooterComponent = styled.div`
         }
       }
       .right-info {
+        width: 30%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 24px;
         .buttons-container {
           display: flex;
-          align-items: flex-start;
-          gap: 12px;
-          align-self: stretch;
+          width: 100%;
+          .getstarted-btn {
+            background-color: #F09021;
+            border:none;
+            color:white;
+            margin-right: 20px;
+            padding: 0.7rem 2.8rem;
+          }
+          .login-btn {
+            color:white;
+            background-color:#1B3F58;
+            padding: 0.66rem 4rem;
+            border: 1px solid #fff;
+          }
         }
       }
     }
     .footer-liner {
-      width: 85vw;
+      width: 100%;
       height: 1px;
       background-color: #fff;
     }
     .footer-bottom {
       display: flex;
-      width: 85vw;
+      width: 100%;
       justify-content: space-between;
       align-items: center;
       .service {
@@ -64,7 +78,7 @@ const Footer = () => {
         <div className="footer-top">
           <div className="left-info">
             <div className="logo">
-              {/* <img src={logo} alt="" /> */}
+              <img src={logo} alt="" />
             </div>
             <div className="contact-details">
               <div className="mail-info">
@@ -77,11 +91,15 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="">
-            <h1>Get Personal Details</h1>
-            <div className="" style={{display:'flex',}}>
-              <button style={{width:'50%', marginRight:'.50rem', padding:'0.50rem 1.25rem', backgroundColor:'#F09021', border:'none', color:'white' }}>Get Started</button>
-              <button style={{ width:'50%', color:'white', backgroundColor:'#1B3F58', border:'1px solid white',}}>Login</button>
+          <div className="right-info">
+            <h1>Get started with personal manager now</h1>
+            <div className="buttons-container">
+              {/* <button className="getstarted-btn">Get Started</button> */}
+              <ButtonComponent className="getstarted-btn">GET STARTED</ButtonComponent>
+              {/* <button className="login-btn">Login</button> */}
+              <ButtonComponent className="login-btn">
+                Login
+              </ButtonComponent>
             </div>
           </div>
         </div>

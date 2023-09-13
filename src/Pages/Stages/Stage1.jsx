@@ -22,6 +22,7 @@ import {
 import "./common.css";
 import { DropDownList } from "@progress/kendo-react-dropdowns";
 import { DatePicker } from "@progress/kendo-react-dateinputs";
+import Stage from "./_request"
 
 // Define the data for your dropdown options
 const lastNameOptions = ["Option 1", "Option 2", "Option 3"];
@@ -32,7 +33,7 @@ const datepickerOptions = {
 };
 
 const Stage1 = () => {
-  const handleSubmit = (dataItem) => alert(JSON.stringify(dataItem, null, 2));
+  const handleSubmit = (dataItem) => {const res = Stage(url, {dataItem})};
   return (
     <Form
       onSubmit={handleSubmit}
@@ -310,6 +311,8 @@ const Stage1 = () => {
                 style={{ width: "250px", lineHeight: 2 }}
               />
           </fieldset>
+          <button type="submit"></button>
+          
         </FormElement>
       )}
     />

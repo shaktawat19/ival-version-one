@@ -13,6 +13,7 @@ const siteConfig = Object.freeze({
 
     //ENDPOINTS PROPERTIES
     LOGIN:"/api/login/",
+    GET_USER_BY_ACCESSTOKEN_URL:"/me/",
     ACCOUNT:"/accounts"
   });
   

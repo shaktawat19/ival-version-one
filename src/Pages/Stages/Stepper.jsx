@@ -5,7 +5,8 @@ import Stage4 from "./Stage4";
 import Stage2 from "./Stage2";
 import Stage3 from "./Stage3";
 import StepperComponent from "../../components/stepper/StepperComponent";
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/footer/Footer"
+
 
 
 
@@ -37,9 +38,10 @@ const Stepper = () => {
     <>
     <div className="" style={{ width:"100%"}}>
       <StepperComponent steps={customSteps} />
+      <Footer/>
     </div>
     <div>
-      <Footer/>
+    
     </div>
     </>
   );

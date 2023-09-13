@@ -392,6 +392,7 @@ const Stage2 = () => {
               </div>
             </div>
           </fieldset>
+          
         </FormElement>
       )}
     />

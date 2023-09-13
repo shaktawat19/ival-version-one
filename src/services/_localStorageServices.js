@@ -5,7 +5,6 @@ class LocalStorageService {
   getAccessToken() {
     try {
       let access_token = localStorage.getItem(siteConfig.ACCESS_TOKEN);
-      console.log(access_token);
       return access_token;
     } catch (err) {
       console.log(err);

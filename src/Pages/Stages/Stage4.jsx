@@ -23,7 +23,7 @@ import {
 } from "../../components/forminput/validator";
 import { ExternalDropZone, Upload } from "@progress/kendo-react-upload";
 import DropZone from "../../components/dropzone/DropZone";
-import KendoButton from "../../components/button/KendoButton";
+import KendoButton from "../../components/button/ButtonComponent";
 
 const Stage4 = () => {
   const [selectedValue, setSelectedValue] = React.useState("first");

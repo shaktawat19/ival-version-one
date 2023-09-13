@@ -1,0 +1,36 @@
+.panelbar-wrapper {
+  max-width: 70vw;
+  height: 70vh;
+  margin: 0 auto;
+  padding: 7rem 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.panelbar-wrapper h1 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.k-panelbar > .k-panelbar-header > .k-link {
+  color: #000;
+  outline: none !important;
+}
+
+.k-panelbar > .k-panelbar-header > .k-link.k-selected,
+.k-panelbar .k-panelbar-group > .k-panelbar-item > .k-link.k-selected {
+  background-color: #fff !important;
+  color: #000 !important;
+  outline: 0 !important;
+  border: none !important;
+}
+
+.k-panelbar .k-panelbar-group > .k-panelbar-item > .k-link:hover,
+.k-panelbar > .k-panelbar-header > .k-link:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* .k-svg-icon > svg {
+      display: none;
+  } */

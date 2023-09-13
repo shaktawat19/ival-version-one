@@ -1,8 +1,8 @@
 import React from "react";
 import "./common.css";
-import KendoButton from "../../components/button/KendoButton";
+import KendoButton from "../../components/button/ButtonComponent";
 import DropZone from "../../components/dropzone/DropZone";
-import Footer from "../../components/Footer/Footer";
+
 const Stage3 = () => {
   return (
     <>

@@ -8,7 +8,6 @@ const getAuth = () => {
   }
 
   const lsValue = localStorage.getItem(siteConfig.DC_AUTH_IVAL);
-  console.log(lsValue,"value1")
   if (!lsValue) {
     return;
   }
@@ -31,10 +30,8 @@ const setAuth = (auth) => {
 
   try {
     const lsValue = JSON.stringify(auth);
-    console.log(lsValue,"lsvalue");
     localStorage.setItem(siteConfig.DC_AUTH_IVAL, lsValue);
-    const a = LocalStorageService.setToken(auth);
-    console.log(a,"aaaaaa")
+    LocalStorageService.setToken(auth);
   } catch (error) {
     console.error("AUTH LOCAL STORAGE SAVE ERROR", error);
   }

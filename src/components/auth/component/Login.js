@@ -41,7 +41,7 @@ const Login = () => {
             data: auth 
         } = await login(values.email, values.password);
         saveAuth(auth?.access);
-
+        navigate("/stepper");
         const {
            data: user 
         } = await getUserByToken(auth?.token);
@@ -50,7 +50,7 @@ const Login = () => {
         console.error(error);
 
         // Handle any other errors, e.g., network issues, server errors, etc.
-        // saveAuth(undefined);
+        saveAuth(undefined);
         setStatus("An error occurred during login");
         setSubmitting(false);
         setLoading(false);
